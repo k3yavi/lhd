@@ -1,5 +1,5 @@
 # lhd
-load haul and dump machine for SRA to fastq dumping
+**load haul and dump** machine for SRA to fastq dumping
 
 Frusted by waiting hours for fastq-dump, trying to find an alternative.
 
