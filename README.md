@@ -3,6 +3,12 @@
 
 Frusted by waiting hours for fastq-dump, trying to find an alternative.
 
+Dependency:
+vdb-dump
+
+Not much of intelligent work, but yea it can save time.
+Actually better part of the work has already been done by vdb-dump. :P
+
 Keeping log of realizations with time.
 ###Feb 6
 * Intial reading gives an intution that it'll be difficult to parse SRA's vertical database architecture.
