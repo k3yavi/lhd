@@ -51,3 +51,18 @@ Mate creation Done!! Enjoy
 98.45user 11.10system 1:36.04elapsed 99%CPU (0avgtext+0avgdata 1529020maxresident)k
 56inputs+5253616outputs (0major+1752527minor)pagefaults 0swaps
 ```
+
+Shittt Multithreading slows it down why????
+My time with 2 threads:
+```
+╰─$ /usr/bin/time python3 lhd.py --sra SRR453569.sra
+exiting filling queue
+Exiting thread 0
+Exiting thread 1
+Mate creation Done!! Enjoy
+177.60user 49.68system 2:55.60elapsed 129%CPU (0avgtext+0avgdata 2790260maxresident)k
+8inputs+5253680outputs (0major+2170993minor)pagefaults 0swaps
+```
+
+* My intution is I am not writing in batch, writing 1 read at a time slows it down
+* Now the question is what should be the batch size??
