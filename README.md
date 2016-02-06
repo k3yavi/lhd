@@ -1,7 +1,7 @@
 # lhd
-load haul and dump machine for SRA to fastq dumnping
+load haul and dump machine for SRA to fastq dumping
 
-Frsuted by waiting hours for fastq-dump, trying to find an alternative.
+Frusted by waiting hours for fastq-dump, trying to find an alternative.
 
 Keeping log of realizations with time.
 ###Feb 6
