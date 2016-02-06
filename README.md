@@ -3,6 +3,12 @@
 
 Frusted by waiting hours for fastq-dump, trying to find an alternative.
 
+Dependency:
+vdb-dump
+
+Not much of intelligent work, but yea it can save time.
+Actually better part of the work has already been done by vdb-dump. :P
+
 Keeping log of realizations with time.
 ###Feb 6
 * Intial reading gives an intution that it'll be difficult to parse SRA's vertical database architecture.
@@ -66,3 +72,15 @@ Mate creation Done!! Enjoy
 
 * My intution is I am not writing in batch, writing 1 read at a time slows it down
 * Now the question is what should be the batch size??
+
+* kk, Implemented batch version of code with batch size of 1000 reads:
+2 threads:
+```
+╰─$ /usr/bin/time python3 lhd.py --sra SRR453569.sra --bs 1000
+exiting filling queue
+Exiting thread 0
+Exiting thread 1
+Mate creation Done!! Enjoy
+136.29user 40.35system 2:31.95elapsed 116%CPU (0avgtext+0avgdata 323564maxresident)k
+8inputs+5253656outputs (0major+21080388minor)pagefaults 0swaps
+```
