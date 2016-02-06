@@ -38,3 +38,5 @@ so no matter how fast I try to take input from vda it'll take minimum 11 min whi
 46.62user 2.49system 0:45.81elapsed 107%CPU (0avgtext+0avgdata 323628maxresident)k
 0inputs+0outputs (0major+508963minor)pagefaults 0swaps
 ```
+
+* Multithreading is killing me :-\
