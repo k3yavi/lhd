@@ -31,3 +31,10 @@ so no matter how fast I try to take input from vda it'll take minimum 11 min whi
 22.37user 3.36system 0:27.27elapsed 94%CPU (0avgtext+0avgdata 323528maxresident)k
 0inputs+4186232outputs (0major+785178minor)pagefaults 0swaps
 ```
+
+* ok so reading from stream in python slows it down:
+```
+╰─$ /usr/bin/time python3 lhd.py > /dev/null                                                       127 ↵
+46.62user 2.49system 0:45.81elapsed 107%CPU (0avgtext+0avgdata 323628maxresident)k
+0inputs+0outputs (0major+508963minor)pagefaults 0swaps
+```
