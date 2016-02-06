@@ -24,8 +24,8 @@ where as dumping itself through vda-dump take:
 so no matter how fast I try to take input from vda it'll take minimum 11 min which is worse then fastq-dump i.e. 6 min
 
 ###Feb7
-OMG OMG realization check this shittt,  !!!
-lesson learnt: take shower when stuck :p
+* OMG OMG realization check this shittt,  !!!
+* lesson learnt: take shower when stuck :p
 ```
 ╰─$ /usr/bin/time vdb-dump -f fastq  SRR453569.sra > test.fastq
 22.37user 3.36system 0:27.27elapsed 94%CPU (0avgtext+0avgdata 323528maxresident)k
