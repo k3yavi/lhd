@@ -84,3 +84,12 @@ Mate creation Done!! Enjoy
 136.29user 40.35system 2:31.95elapsed 116%CPU (0avgtext+0avgdata 323564maxresident)k
 8inputs+5253656outputs (0major+21080388minor)pagefaults 0swaps
 ```
+
+Forget everything solution is:
+:unamused:
+
+for mates do this:
+```
+vdb-dump SRR453569.sra | awk 'NR%2==1 { print $0 "/1" } ; NR%2==0 { print substr($0,0,length($0)/2) }' - > SRR453569_1.fq
+vdb-dump SRR453569.sra | awk 'NR%2==1 { print $0 "/2" } ; NR%2==0 { print substr($0,length($0)/2) }' - > SRR453569_2.fq
+```
