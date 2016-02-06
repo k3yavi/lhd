@@ -40,3 +40,14 @@ so no matter how fast I try to take input from vda it'll take minimum 11 min whi
 ```
 
 * Multithreading is killing me :-\
+
+* Ok I totally ruined the running time BUT still 4x faster then fastq-dump.
+* My single threaded version time.
+```
+╰─$ /usr/bin/time python3 lhd.py --sra SRR453569.sra
+exiting filling queue
+Exiting thread 0
+Mate creation Done!! Enjoy
+98.45user 11.10system 1:36.04elapsed 99%CPU (0avgtext+0avgdata 1529020maxresident)k
+56inputs+5253616outputs (0major+1752527minor)pagefaults 0swaps
+```
