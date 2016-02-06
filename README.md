@@ -7,7 +7,6 @@ Keeping log of realizations with time.
 ###Feb 6
 * Intial reading gives an intution that it'll be difficult to parse SRA's vertical database architecture.
 * Plan B is to use vdb-dump for getting intermediate dump, use that to parse and get fastq dump.
-###Feb7
 * So turns out Plan-B will not work:
 ```
 ╰─$ /usr/bin/time fastq-dump --split-3  SRR453569.sra                                              127 ↵
@@ -23,3 +22,12 @@ where as dumping itself through vda-dump take:
 0inputs+0outputs (0major+1359521minor)pagefaults 0swaps
 ```
 so no matter how fast I try to take input from vda it'll take minimum 11 min which is worse then fastq-dump i.e. 6 min
+
+###Feb7
+OMG OMG realization check this shittt,  !!!
+lesson learnt: take shower when stuck :p
+```
+╰─$ /usr/bin/time vdb-dump -f fastq  SRR453569.sra > test.fastq
+22.37user 3.36system 0:27.27elapsed 94%CPU (0avgtext+0avgdata 323528maxresident)k
+0inputs+4186232outputs (0major+785178minor)pagefaults 0swaps
+```
